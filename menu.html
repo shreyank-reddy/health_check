@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU PAGE</title>
+    <style>
+        .page_title {
+    padding: 30px 0px;
+}
+.page_title h1 {
+    color: #c0392b;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+.page_title h1::before {
+    background: #c0392b;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page_title h1::after {
+    position: absolute;
+    content: '';
+    background: #fbc531;
+    width: 30px;
+    height: 2px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Menu starts*/
+.menu_tab {
+    margin: 0 auto;
+    justify-content: center;
+}
+.nav-item {
+    display: inline-block;
+    text-align: center;
+}
+.nav-tabs .nav-link{
+    transition: .3s;
+}
+.nav-tabs .nav-link.active {
+    background: #c0392b;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #c0392b;
+    text-transform: capitalize;
+}
+.nav-link {
+    color: #000;
+}
+.nav-tabs .nav-link:hover {
+    background: #c0392b;
+    color: #fff;
+    border: 1px solid #c0392b;
+}
+.single_menu {
+    position: relative;
+    margin-bottom: 75px;
+    transition: .3s;
+}
+.single_menu:hover img{
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+
+}
+.single_menu img {
+    width: 15%;
+    position: absolute;
+    height: 140px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.menu_content {
+    padding-left: 200px;
+}
+.menu_content h4 {
+    font-size: 25px;
+    font-weight: 300;
+    border-bottom: 1px dashed #c0392b;
+    line-height: 2;
+    text-transform: capitalize;
+}
+.menu_content h4 span {
+    font-size: 25px;
+    font-weight: 800;
+    float: right;
+    font-style: italic;
+    color: #c0392b;
+}
+.menu_content p {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.menu_btn.btn.btn-danger {
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+}
+/*Menu ends*/
+.menu_btn.btn.btn-danger {
+	margin: 0 auto;
+	display: block;
+	width: 140px;
+}
+.btn.btn-danger {
+	background: #c0392b;
+	border: 1px solid #c0392b;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	text-transform: capitalize;
+	font-weight: 700;
+	overflow: hidden;
+	padding: 15px 25px;
+}
+.btn.btn-danger::before {
+	position: absolute;
+	content: '';
+	background: #e74c3c;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	top: 100%;
+	transition: .3s;
+	z-index: -1;
+}
+.btn.btn-danger:hover:before{
+    top: 0;
+    left: 0;
+}
+.menu{
+	text-align: center;
+	color: #ddd;
+	font-size: 80px;
+
+}
+.par{
+	text-align: center;
+	color:white;
+
+}
+
+.book { 
+    background: #ea0000;
+    transform: translateY(30px);
+	display: block;
+	margin-left: auto;
+	margin-right: 100px;
+	width: 90px;
+	height: 50px;
+	background-color: #fff;
+	border:2px solid red;
+	padding: 10px;
+	border-radius: 50px 20px;
+	border-width: thick;
+}
+
+.book:hover { 
+    animation:  vibrate 100ms ease-in-out;  
+    animation-iteration-count: 7;
+}
+
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.body{
+	background-attachment: fixed;
+	background-size:cover ;
+	background-repeat: no-repeat;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNVTZdO74STU_h6wfToL4K4uEuTXckMI2ew&usqp=CAU");
+}
+.link{
+	border-radius: 200px;
+	width: 130px;
+}
+
+    </style>
+</head>
+<body class="body">
+    <section id="our_menu" class="pt-5 pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="page_title text-center mb-4">
+						<h1 class="menu">our menu</h1>
+						<div class="single_line"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="tab-content col-lg-12" id="myTabContent">
+					<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH22x8AYXqnv0iDJ7hrhmTU_IgEXdq5g0q7A&usqp=CAU" alt="burger">
+									<div class="menu_content">
+										<h4 class="par">organic fruit bars  <span>$24</span></h4>
+										<p class="par"> Fruit bar preparations may include a mixture of pulps, fresh or dried fruit, sugar, binders, and a variety of minor ingredients. Additionally to the conventional steps of manufacturing (pulping, homogenizing, heating, concentrating, and drying) there have been proposed the use of gelled fruit matrices, dried gels or sponges, and extruders as new trends for processing fruit bars.</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+			    </div>
+	        </div>
+			<a href="http://127.0.0.1:5500/book.html"><button class="book"><b>Book</b></button></a>
+			<div class="row">
+				<div class="tab-content col-lg-12" id="myTabContent">
+					<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HH2shu6ZyDcwgq_clBOuspDaaP7uHx9MKA&usqp=CAU">
+									<div class="menu_content">
+										<h4 class="par">organic fruits   <span>$24</span></h4>
+										<p class="par"> Buy organic fruits and vegetables with the highest pesticide residue and go conventional with those on the low-residue list: "The Clean Fifteen."</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+			    </div>
+	        </div>
+			<a href="http://127.0.0.1:5500/book.html"><button class="book"><b>Book</b></button></a>
+			<div class="row">
+				<div class="tab-content col-lg-12" id="myTabContent">
+					<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQTEhUTExMVFRUXGCAaGRgYGB8YFxcYGhsdGBcYGh4bHSggGhslHR0YIzIiJSkrLi4uGR81ODMtNygtLisBCgoKDg0OGxAQGjAlICUrLS0wMS8vLS01MDUtLS0vLS0tLS0tLy0vLS8tLS0vLS0tLS0vLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUCCAH/xABEEAABAwIDBQYDBgIJAwUBAAABAAIRAyEEEjEFBiJBURMyYXGBkQehsRQjQlLB8GLxCBUzQ4KSotHhJFPCY3KTs9IW/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQIBBv/EADARAAEDAgQDCAIDAAMAAAAAAAEAAhEDIQQSMUETUWEFcYGRobHR8CLBMuHxFSNC/9oADAMBAAIRAxEAPwC8URERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERQL4m79v2aaDKdJtR1UOJzGIDMot48XyRFPUVF1fjRWb/dX8A2FIfh38T6mPxn2apRYwGm5wcCc0tIsRpEE+yIrTRERERF8/fGfevF0NpmnQxFSmxlJnC08MmXEkaHUeyIvoCV+r5NrfEXaNoxThbk1v6gqcfAzejFYjaFSnXxFSqw4dzsrjIDmvZBA5WLtOqXRX0iIiItT+saUx2jPRwKbUeRRqkaim4jzDSvjPD46owlwe8E6kOIJPU9URfZ/22n+dvuslKoHCWkEHmDIXxbV2jWd3qtQz1eSPqvoz4A4jNsoCZyVnt8u67/yRFZSIiIvJMarH9pZ+dv+YKnf6Qm0atJ+BbSqvpg9oTlcWyQaYExrqfdVXi968Y2AMRUHt/svF6vrllQHQg+Rle18pbk7xYp+0sEH4iqQcRTBGYgEOeAQQLGQSvq1F4iIi9RERERERERERERFSP8ASEjtcJYkhj+VgCW6/wCVXconvNtPD9oGOZne03IAkW7s89dFy5waJK9AJ0XzFjaY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">
+									<div class="menu_content">
+										<h4 class="par">organic drinks  <span>$24</span></h4>
+										<p class="par">Beverages are necessary to keep you hydrated at all times. If you are health conscious. Don't Worry..!!! We have a vast range of teas and juices from certified organic companies. From bottled juices to tetra packs explore the varieties on offer from 24 Mantra and Natureland and Organic India.</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+			    </div>
+	        </div>
+			<a href="http://127.0.0.1:5500/book.html"><button class="book"><b>Book</b></button></a>
+			<div class="row">
+				<div class="tab-content col-lg-12" id="myTabContent">
+					<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NaCItNx5jYf9Q-KKm8DJKexlePoSv-mNdw&usqp=CAU">
+									<div class="menu_content">
+										<h4 class="par">organic pulses <span>$24</span></h4>
+										<p class="par">Organic pulses appear to be an environmentally pleasant output technique with a taste significantly better than regular pulses. Organic pulses support the native economic system and have a long shelf life. </p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+			    </div>
+	        </div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>
